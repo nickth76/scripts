@@ -8,6 +8,6 @@ scripts
 
  * fixpackage-dpkg : Χρησιμοποιείται σε συστήματα Debian/Ubuntu και προσπαθεί να διορθώσει λάθη εγκατάστασης πακέτων ή αναβάθμισης.
 
- * goo.gl : Για να χρησιμοποιήσουμε τον Google URL Shortener. 
+ * goo.gl : Για να χρησιμοποιήσουμε τον Google URL Shortener μέσω τερματικού. 
 
  * softwarecenterfix: Χρησιμοποιείται στο Ubuntu και προσπαθεί να διορθώσει προβλήματα στο Software Center.
