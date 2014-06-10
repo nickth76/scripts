@@ -1,0 +1,35 @@
+#!/bin/bash
+
+sudo rm /usr/lib/python*/dist-packages/__pycache__/*pyc
+
+sudo apt-get install --reinstall python3-gi
+
+sudo apt-get purge software-center
+
+rm -rf ~/.cache/software-center
+
+rm -rf ~/.config/software-center
+
+rm -rf ~/.cache/update-manager-core
+
+sudo rm /var/lib/apt-xapian-index/cataloged_times.p
+
+sudo rm /var/lib/apt-xapian-index/values
+
+sudo update-apt-xapian-index --verbose --force
+
+sudo update-apt-xapian-index --force
+
+sudo apt-get update
+
+sudo apt-get dist-upgrade
+
+sudo apt-get install software-center ubuntu-desktop
+
+sudo dpkg-reconfigure software-center --force
+
+sudo update-software-center
+
+sudo apt-get install --reinstall software-center
+
+exit 0
