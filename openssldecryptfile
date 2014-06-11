@@ -7,12 +7,12 @@ echo "Please give the absolute path of the encrypted file, WITHOUT the ".aes" ex
 read file
 openssl aes-128-cbc -d -salt -in $file.aes -out $file
 if [ $? -ne 0 ]; then 
-exit 100
+   exit 100
 else
-echo "Your file has been decrypted as $file"
-sleep 1
-echo "If you want to remove the encrypted .aes file, you have to do it by your own"
-echo ""
-echo "Thank you" 
+   echo "Your file has been decrypted as $file"
+   sleep 1
+   echo "If you want to remove the encrypted .aes file, you have to do it by your own"
+   echo ""
+   echo "Thank you"
+   exit 0 
 fi
-exit 0
