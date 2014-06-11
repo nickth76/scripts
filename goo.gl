@@ -1,4 +1,4 @@
-#bin/bash
+#!bin/bash
 echo "Welcome to Google URL Shortener Script"
 sleep 1
 echo "Please type the long URL" 
