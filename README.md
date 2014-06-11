@@ -12,7 +12,7 @@ scripts
 
  * **opensslencryptfile**: Χρησιμοποιεί aes-128-cbc για να κρυπτογραφήσει ένα αρχείο. 
 
- * **openssldecryptfile**: Χρησιμοποιείται για να αποκρυπτoγράφηση αρχείου, _που έχει κρυπτογραφηθεί με το opensslencryptfile_.
+ * **openssldecryptfile**: Χρησιμοποιείται για αποκρυπτoγράφηση αρχείου, _που έχει κρυπτογραφηθεί με το opensslencryptfile_.
 
  * **softwarecenterfix**: Χρησιμοποιείται στο Ubuntu και προσπαθεί να διορθώσει προβλήματα στο Software Center.
 
