@@ -1,5 +1,5 @@
 #!/bin/bash
-#Script created by anewguy, tested by chili555 and edited by krytarik, llua and wildmanne39
+#Script created in ubuntuforums.org by anewguy, tested by chili555 and edited by krytarik, llua and wildmanne39
 exec > netinfo.txt 2> /dev/null
 echo -e "\n*************** info trace ****************\n"
 echo -e "\n\n**** uname -a ****\n\n"
