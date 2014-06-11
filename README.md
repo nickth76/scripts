@@ -8,11 +8,11 @@ scripts
 
  * **fixpackage-dpkg**: Χρησιμοποιείται σε συστήματα Debian/Ubuntu και προσπαθεί να διορθώσει λάθη εγκατάστασης πακέτων ή αναβάθμισης.
 
- * **goo.gl**: Για να χρησιμοποιήσουμε τον Google URL Shortener μέσω τερματικού. 
+ * **goo.gl**: Για να χρησιμοποιήσουμε τον Google URL Shortener μέσω τερματικού.
+
+ * **openssldecryptfile**: Χρησιμοποιείται για αποκρυπτoγράφηση αρχείου, _που έχει κρυπτογραφηθεί με το opensslencryptfile_. 
 
  * **opensslencryptfile**: Χρησιμοποιεί aes-128-cbc για να κρυπτογραφήσει ένα αρχείο. 
-
- * **openssldecryptfile**: Χρησιμοποιείται για αποκρυπτoγράφηση αρχείου, _που έχει κρυπτογραφηθεί με το opensslencryptfile_.
 
  * **softwarecenterfix**: Χρησιμοποιείται στο Ubuntu και προσπαθεί να διορθώσει προβλήματα στο Software Center.
 
