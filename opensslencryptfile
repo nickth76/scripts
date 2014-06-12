@@ -1,11 +1,12 @@
 #!/bin/bash 
+openssl=$(which openssl)
 echo "If you intent to encrypt a file owned by root (or any other than you), 
 run this script as root or it will fail, despite the stdout messages"
 sleep 3
 echo "" 
 echo "Please give the absolute path of the file you want to encrypt"
 read file
-/bin/openssl aes-128-cbc -salt -in $file -out $file.aes
+$openssl aes-128-cbc -salt -in $file -out $file.aes
 if [[ $? -ne 0 ]]; then
    exit 100
 else
