@@ -1,9 +1,0 @@
-#!bin/bash
-echo "Welcome to Google URL Shortener Script"
-sleep 1
-echo "Please type the long URL" 
-read URL
-sleep 1
-echo ""
-curl -silent https://www.googleapis.com/urlshortener/v1/url -H 'Content-Type: application/json' -d '{"longUrl": "'$URL'"}' | grep "id" | echo "The short URL is:" $(awk '{gsub(/,$/,""); print $2}') | sed 's@no-cache,@@'
-exit 0 
