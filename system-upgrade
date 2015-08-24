@@ -1,4 +1,4 @@
 #!/bin/bash
 PATH=/usr/bin:/usr/sbin:/bin:/sbin
-gnome-terminal -t "system upgrade" --execute bash -c "sudo apt-get update && sudo apt-get -y dist-upgrade;bash"
+gnome-terminal -t "system upgrade" --execute bash -c "sudo apt-get update && sudo apt-get -y dist-upgrade;exec bash"
 exit 0
