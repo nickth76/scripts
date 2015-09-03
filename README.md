@@ -19,3 +19,5 @@ scripts
  * **countdown**: Αντίστροφη μέτρηση. Αλλάζουμε τα seconds ανάλογα. 
 
  * **system-upgrade**: Καλεί το gnome-terminal για να εκτελέσει δυο εντολές, για την αναβάθμιση του συστήματος.
+
+ * **lspasswdgk**: Κάνει export όλους τους κωδικούς από το gnome-keyring, σε plain text.  
