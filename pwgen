@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+LOG=/home/$USER/new_passwd
+if hash apg 2>/dev/null; then
+        $(which apg) -a 1 -n 5 -m 10 -x 14 -s > $LOG
+	echo ""
+	sleep 2
+	echo "five passwords generated successfully"
+	echo ""
+	sleep 2
+	echo "please read the file new_passwd" 
+	echo ""
+	echo ""
+	sleep 02
+	echo "the file new_passwd will be deleted in:"
+	echo ""
+	echo "5" 
+	sleep 1
+	echo ""
+	echo "4" 
+	sleep 1
+	echo ""
+	echo "3"
+	sleep 1
+	echo ""
+	echo "2"
+	echo ""
+	sleep 1
+	echo "1"
+	sleep 1
+	echo ""
+	$(which rm) /home/$USER/new_passwd
+	echo ""
+	exit 0
+else
+        echo ""
+        echo "Please install apg program first, then run the script again"
+exit 255
+    fi
