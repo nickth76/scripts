@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Author: ashay dot humane at gmail.com
+# Modified by nickth[AT]linux[dot]com
+# Given a file name, this script prints the file creation time,
+# as ext4 records it
+# Might error out on other filesystems
+
+
+DEBUGFS="/sbin/debugfs"
+
+[[ -f "$1" ]] || { echo "Invalid filename. Exiting" ; exit 1; }
+
+[[ -f "$DEBUGFS" ]] || { echo "/sbin/debugfs absent. Exiting" ; exit 1; }
+
+[[ $EUID != 0 ]] && { echo "You are not root. Exiting" ; exit 1 ; }
+
+INODE=$(ls -i "$1" |cut -d' ' -f1)
+
+DEV=$(df "$1" | awk 'NR == 2 {print $1}')
+
+CMD="${DEBUGFS} -R \"stat <${INODE}>\" ${DEV} 2> /dev/null"
+#echo running: ${CMD}
+echo
+eval ${CMD} | grep "crtime" | awk '{print $4,$5,$6,$7,$8}'
